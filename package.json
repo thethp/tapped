@@ -1,0 +1,29 @@
+{
+  "name": "tapped",
+  "version": "1.0.0",
+  "description": "Tapped's Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thethp/tapped.git"
+  },
+  "keywords": [
+    "tapped"
+  ],
+  "author": "Todd H. Page",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thethp/tapped/issues"
+  },
+  "homepage": "https://github.com/thethp/tapped",
+  "devDependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-sass": "^2.0.4",
+    "jade": "^1.11.0"
+  }
+}

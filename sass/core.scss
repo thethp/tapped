@@ -1,0 +1,13 @@
+@import 'variables/colors';
+@import 'variables/fonts';
+@import 'patterns/reset';
+@import 'patterns/header';
+
+html {
+  background: url(http://guilfordcitizensdayparade.org/images/tappedbg2.png) no-repeat 0 50px fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: $blue;
+}
