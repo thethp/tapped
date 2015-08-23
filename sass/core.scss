@@ -1,13 +1,39 @@
 @import 'variables/colors';
 @import 'variables/fonts';
+@import 'patterns/buttons';
 @import 'patterns/reset';
 @import 'patterns/header';
 
 html {
-  background: url(/images/tappedbg-2880.png) no-repeat 50% 10px fixed; 
+  background: url(/images/tappedbgleft.png) no-repeat 0 50px fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: $blue;
 }
+
+.main-content {
+  margin: 150px 50px;
+  text-align: center;
+  background: rgba(1,1,1,0.5);
+  font-family: edmondsans;
+  color: $white;
+
+  &._right {
+    width: 60%;
+    float: right;
+  }
+
+  h1 {
+    font-size: 38px;
+    font-family: edmondsans;
+  }
+
+  img.press_photo {
+    width: 80%;
+    padding: 40%;
+  }
+
+}
+
