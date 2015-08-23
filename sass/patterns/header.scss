@@ -1,6 +1,7 @@
 nav {
   width: 100%;
   position: fixed;
+  top: 0; left: 0; right: 0;
   padding-right: 100px;
   background-color: $dark-red;
   text-align: right;
@@ -15,11 +16,17 @@ nav {
     text-decoration: none;
     color: $white;
   }
+
+  .logo {
+    border: none;
+  }
     
-  &.nav_choice {
+  .nav_choice {
     padding-bottom: 25px;
 
     &:hover {      
+      background-color: $white;
+      color: $pink;
       text-decoration: underline;
     }
   
