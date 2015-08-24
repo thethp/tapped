@@ -1,0 +1,38 @@
+@import 'variables/colors';
+@import 'variables/fonts';
+@import 'patterns/buttons';
+@import 'patterns/reset';
+@import 'patterns/header';
+
+html {
+  background: url(/images/tappedbgcenter.png) no-repeat 50% 50px fixed;
+  background-color: $blue;
+}
+
+.person {
+  display: inline-block;
+  text-align: center;
+  font-family: mission;
+  padding: 20px 25px;
+
+  .icon {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 100%;
+    border: 10px solid $white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: border .5s, filter .5s;
+
+    &:hover {
+      border: 10px solid $pink;
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+
+  .name { font-size: 20px; }
+}

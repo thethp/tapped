@@ -19,10 +19,17 @@ html {
   background: rgba(1,1,1,0.5);
   font-family: edmondsans;
   color: $white;
+  padding: 20px;
+  transition: width .5s;
 
   &._right {
     width: 60%;
     float: right;
+  }
+
+  &._center {
+    width: 90%;
+    margin: 150px auto;
   }
 
   h1 {
@@ -32,8 +39,19 @@ html {
 
   img.press_photo {
     width: 80%;
-    padding: 40%;
+    margin: 30px 0;
   }
-
 }
 
+@media screen and (max-width: 1060px) {
+  html {
+    background: url(/images/tappedbgcenter.png) no-repeat 50% 50px fixed;
+    background-color: $blue;
+  }
+
+  .main-content,.main-content._right {
+    margin: 150px auto;
+    width: 80%;
+    float: none;
+  }
+}

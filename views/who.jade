@@ -1,0 +1,18 @@
+html.who
+  head
+    title Someone is Always Watching
+    link(rel='stylesheet', href='/styles/core.css')
+    link(rel='stylesheet', href='/styles/who.css')
+  body
+    include ./includes/nav.jade
+    section.main-content._center
+      h1 Creative
+      for el in creative
+        .person(bio='#{el.Bio}')
+          .icon(style='background-image: url(/images/bios/#{el.Picture})')
+          .name  #{el.Name} - #{el.Role}
+      h1 Cast
+      for el in cast
+        .person(bio='#{el.Bio}')
+          .icon(style='background-image: url(/images/bios/#{el.Picture})')
+          .name  #{el.Name} - #{el.Role}
