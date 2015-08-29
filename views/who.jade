@@ -8,11 +8,13 @@ html.who
     section.main-content._center
       h1 Creative
       for el in creative
-        .person(bio='#{el.Bio}')
+        .person(bio='#{el.Bio}',image='/images/bios/#{el.Picture}')
           .icon(style='background-image: url(/images/bios/#{el.Picture})')
           .name  #{el.Name} - #{el.Role}
       h1 Cast
       for el in cast
-        .person(bio='#{el.Bio}')
+        .person(bio='#{el.Bio}',image='/images/bios/#{el.Picture}')
           .icon(style='background-image: url(/images/bios/#{el.Picture})')
           .name  #{el.Name} - #{el.Role}
+  script(src='/includes/jquery-2.1.4.min.js')
+  script(src='/scripts/who.js')
