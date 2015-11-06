@@ -14,7 +14,7 @@ html {
 }
 
 .main-content {
-  margin: 150px 50px;
+  margin: 120px 50px 0;
   text-align: center;
   background: rgba(1,1,1,0.5);
   font-family: edmondsans;
@@ -29,7 +29,7 @@ html {
 
   &._center {
     width: 90%;
-    margin: 150px auto;
+    margin: 120px auto 0;
   }
 
   h1 {

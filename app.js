@@ -10,6 +10,10 @@ app.get('/', function(req, res) {
   res.render('home');
   next();
 });
+app.get('/praise', function(req, res) {
+  res.render('praise', reviews);
+  next();
+});
 app.get('/who', function(req, res) {
   res.render('who', creative_cast);
   res.end();
@@ -137,3 +141,36 @@ var creative_cast = { creative: [
       'Picture': 'HS.jpg'
     }
   ]};
+
+var reviews = { reviews: [
+  {
+    'Reviewer': 'Jack Russell',
+    'Context': 'Chicago Sun Times',
+    'Review': 'She was gonna jump off a bridge and I saved her life, then through a series of miscommunications and misunderstandings we learned to love each other'
+  },
+  { 
+    'Reviewer': 'Mary Sunshine',
+    'Context': 'Chicago Tribune',
+    'Review': 'Oh yes oh yes oh yes oh yes oh yes oh yes they both reached for the gun.  OR DID THEY. I don\t trust Billy Flynn as far as I can throw him,also how does Christine Baranski keep getting just THROWAWAY roles in shows instead of the stuff she deserves?'
+  },
+  {
+    'Reviewer': 'Brian Denton',
+    'Context': 'New York Sun',
+    'Review': 'Look at me I\'m the king of New York! I covered the newsboys strike and am the hero of every gay male musical theatre nerd who lived through the early 90\'s.'
+  },
+  {
+    'Reviewer': 'Andrea Sachs',
+    'Context': 'Runway',
+    'Review': 'I took a job I didn\'t especially want because of the experience, continued doing it even though it was clear my role was not going to allow me to move into the kind of work I wanted to actually do in my life, blamed everyone around me for this choice, pushed them away, and then burned all the bridges I might have POSSIBLY made in that industry by writing an "expose" about it.'
+  },
+  {
+    'Reviewer': 'Sara Melas',
+    'Context': 'New York Post Gossip Column',
+    'Review': 'I know Hitch is a terrible movie, like I get it but when he throws his inhaler it\s undeniably cute.'
+  },
+  {
+    'Reviewer': 'Annie Reed',
+    'Context': 'Baltimore Sun',
+    'Review': 'I fell in love with Tom Hanks and met him at the empire state building thanks to his son!'
+  }
+]};
