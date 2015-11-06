@@ -14,44 +14,42 @@ app.get('/praise', function(req, res) {
   res.render('praise', reviews);
   next();
 });
+app.get('/contact', function(req, res) {
+  res.render('contact', reviews);
+  next();
+});
 app.get('/who', function(req, res) {
   res.render('who', creative_cast);
   res.end();
 });
 
 
-app.listen(8060);
+app.listen(80);
 console.log('Server running on port 80');
 
 var creative_cast = { creative: [
   {
     'Name': 'Jed Levine',
     'Role': 'Writer/Lyricist',
-    'Bio': 'Jed would like to apologize to the NSA agent who has been monitoring his internet usage since he first Googled “Has anyone written a musical about the NSA?” He promises that in his daily life, he does more than look up porn. Mostly. Although he is a huge musical nerd, this is his first time writing one.',
+    'Bio': 'Jed would like to apologize to the NSA agent who has been monitoring his internet usage since he first Googled “Has anyone written a musical about the NSA?” He promises that offline, he does more than look at porn. Mostly. Although he’s a huge musical nerd, this is the first one he’s written.',
     'Picture': 'JL.jpg'
   },
   {
     'Name': 'Brad Kemp',
     'Role': 'Composer',
-    'Bio': 'Brad has long been pissing people off with his musical compositions, earning the ire of Tommy Wiseau and the Swedish-American community for composing The Room: The Musical and Yes, Andersonville, respectively. When he’s not irritating the NSA, Brad performs with his hip hop group, Handsome Naked.',
+    'Bio': 'Brad has long been pissing people off with his compositions, earning the ire of Tommy Wiseau and Swedish Americans for composing The Room: The Musical and Yes, Andersonville, respectively. When he’s not irritating the NSA, Brad performs with his hip hop group, Handsome Naked.',
     'Picture': 'BK.jpg'
   },
   {
     'Name': 'Molly Todd',
     'Role': 'Director',
-    'Bio': 'Molly is a proud American and happy to be directing such a positive message for the NSA. Please don\'t arrest her and kindly ignore the numerous emails that allude to her founding a group called Anarchy. (It\'s just an improvised rock musical, but still "like" it on Facebook).',
+    'Bio': 'Molly is a proud American and happy to be directing such a positive message for the NSA. Please don\'t arrest her and kindly ignore the numerous emails that allude to her founding a group called Anarchy. (It\'s just an improvised rock musical, but still “like” it on Facebook).',
     'Picture': 'default.png'
-  },
-  {
-    'Name': 'Mary Mahoney',
-    'Role': 'Music Director',
-    'Bio': 'Mary communicates using the one code the NSA can’t crack: Music. If you listen closely to her play, you’ll uncover the locations of 14 different CIA Black Sites. Also, you’ll hear some bad-ass chords! In addition to her day job as a spy, Mary music directs at The Second City.',
-    'Picture': 'MM.jpg'
   },
   {
     'Name': 'Holly Gombita',
     'Role': 'Choreographer',
-    'Bio': 'Holly is is single-handedly responsible for the NSA expanding into video monitoring. Evidently, the NSA agents wanted to see the dance moves that were making everyone explode into laughter and applause. Holly is a member of the Matter Dance Company and can be found most Wednesdays performing with the Dunder MINtflins at MCL.',
+    'Bio': 'Holly is responsible for the NSA’s expansion into video monitoring (NSA agents wanted to see the dance moves that were resulting in uproarious laughter and applause). Holly is a member of the Matter Dance Company and performs Wednesdays with the Dunder MINtflins at MCL.',
     'Picture': 'default.png'
   }
 ],
@@ -59,13 +57,13 @@ var creative_cast = { creative: [
     {
      'Name': 'Laureen Siciliano',
      'Role': 'Mary',
-     'Bio': "Laureen doesn't watch the news and isn't interested in government happenings. It makes sense that she's had to Google more than one current event when preparing for the lead role of Mary #ignoranceisbliss. Laureen will be performing her self-titled solo show at the Chicago Woman's Funny Festival. Check that shit out",
+     'Bio': "Laureen doesn't watch the news and isn't interested in government happenings. It makes sense that she's had to Google more than one current event when preparing for the lead role of Mary #ignoranceisbliss. When she's not listening to your phone calls, Laureen can be seen performing with MiNTerstellar, Win Again Finnegan and Storytown. Much love and many thanks to family, friends and Claude. www.laureensiciliano.com",
      'Picture': 'LS.jpg'
     },
    {
      'Name': 'Max Hinders',
      'Role': 'Steve',
-     'Bio': "Max has always dreamed of being a whistle-blower ever since watching Citizenfour on HBO. When he isn't exposing the NSA, he can be seen at MCL on Wednesday nights with his team The Secret Life of Walter MINty. Recent Chicago credits include Venetian Twins, First Laugh One-Act Festival, Love of Three Oranges (Piccolo Theatre) Witches Among Us (New American Folk Theater).",
+     'Bio': 'Max has always dreamed of being a whistle-blower ever since watching Citizenfour on HBO. When he isn\'t exposing the NSA, he can be seen at MCL with his team Mint, Flichigan and as the co- host of "Live at MCL with Alex and Max". He can be seen later this year in "Clara and the Nutcracker" at the Piccolo Theatre. Recent Chicago credits include The Venetian Twins and The Love of Three Oranges (Piccolo Theatre).',
      'Picture': 'MH.jpg'
     },
     {
@@ -77,7 +75,7 @@ var creative_cast = { creative: [
     {
       'Name': 'David Dritsas',
       'Role': 'Patrick',
-      'Bio': 'David may not be someone you know, but he just might know you, being that he’s an early sign-up for the NSA affiliate program. He would like to thank all of you for the $0.0001 per entry he gets for logging your activity every time you use the search terms, “da bomb,” "Guy Fawkes Mask coupon code” and “Moscow Mule recipe.”',
+      'Bio': 'David is an early sign-up for the NSA affiliate program and thanks you all for the $0.0001 he gets every time you Google “da bomb," "Guy Fawkes Mask coupon code" and "Moscow Mule recipe." When he’s not tracking your every move, he’s performing in ComedySportz and other improv around town, including the Hitch-cocktails at The Annoyance. He has also worked for The Second City Theatricals, including two tours on the high seas aboard cruise ships.',
       'Picture': 'DD.jpg'
     },
     {
@@ -89,7 +87,7 @@ var creative_cast = { creative: [
     {
       'Name': 'Sarah Barnhardt',
       'Role': 'Ensemble',
-      'Bio': 'Sarah works for the NSA in the Department of Snapchats. She collects your disappeared Snapchats and saves them to your personal folder, organizing into subfolders based on silliness and inappropriateness. Come find out if she uses these in her one-woman show, "This is the WORST!" at Stage 773 this summer. <a href="sarahbarnhardt.com">"www.sarahbarnhardt.com</a>',
+      'Bio': 'Sarah works for the NSA in the Department of Snapchats. She collects your disappeared Snapchats and saves them to your personal folder, organizing into subfolders based on silliness and inappropriateness. Check out her solo sketch and The Comedy Dance Collective to see if any of your "snaps" appear in her shows. <a href="sarahbarnhardt.com">"www.sarahbarnhardt.com</a>',
       'Picture': 'SB.jpg'
     },  
     {
@@ -107,7 +105,7 @@ var creative_cast = { creative: [
     {
       'Name': 'Lou Leonardo',
       'Role': 'Ensemble',
-      'Bio': 'Lou is gonna wear assless chaps.',
+      'Bio': 'may or may not be an undercover FBI agent set to infiltrate this show and assume the identities of its various oddballs. Before going undercover, Lou was a Chicago actor working on stage and screen with a BFA in acting from Syracuse University.',
       'Picture': 'default.png'
     },
     {
@@ -119,19 +117,19 @@ var creative_cast = { creative: [
     {
       'Name': 'Beau Nolen',
       'Role': 'Ensemble',
-      'Bio': 'Beau is probably an American, and might be a government secret weapon. He is currently working undercover as a former reality TV star and Chicago bon vivant, and has recently infiltrated a clandestine organization called The Secret Life of Walter MINty. Some say he is a siren, his serenade as mesmerizing and deadly as his kiss. Beware.',
+      'Bio': 'Beau is probably an American, and might be a government secret weapon. He is currently working undercover as a former reality TV star and Chicago bon vivant, and has recently infiltrated a clandestine organization called X-MINT. Some say he is a siren, his serenade as mesmerizing and deadly as his kiss. Beware.',
       'Picture': 'default.png'
     },    
     {
       'Name': 'Todd Page',
       'Role': 'Ensemble',
-      'Bio': 'has a moustache and all the authority that comes with it, and is proud to be using it as part of this grand organization. You\'re welcome. Todd frequently stops terrorists at MINT (X-Mint), and with vigorous high fives.',
+      'Bio': 'has a moustache and all the authority that comes with it, and is proud to be using it as part of this grand organization. You\'re welcome. Todd frequently stops terrorists at MINT (X-Mint), and with vigorous high fives on ComedySportz house team CHAOS',
       'Picture': 'TP.jpg'
     },
     {
       'Name': 'Kristen Schmitz',
       'Role': 'Ensemble',
-      'Bio': 'Kristen recently fled... err... moved to Chicago from the Bay Area. If you see her doing weird things with her hands, don\'t worry, it\'s not a secret terrorist signal—in addition to acting and improvising she is studying to become a sign language interpreter. Also, she feels a false sense of security when browsing "incognito" on Google.',
+      'Bio': 'Kristen recently fled... err... moved to Chicago from the Bay Area. If you see her doing weird things with her hands, don\'t worry, it\'s not a secret terrorist signal—in addition to acting and improvising she is studying to become a sign language interpreter. You can see her perform every other Friday night at the Comedy Clubhouse with her improv team, Win Again Finnegan.',
       'Picture': 'default.png'
     },
     {
@@ -141,36 +139,3 @@ var creative_cast = { creative: [
       'Picture': 'HS.jpg'
     }
   ]};
-
-var reviews = { reviews: [
-  {
-    'Reviewer': 'Jack Russell',
-    'Context': 'Chicago Sun Times',
-    'Review': 'She was gonna jump off a bridge and I saved her life, then through a series of miscommunications and misunderstandings we learned to love each other'
-  },
-  { 
-    'Reviewer': 'Mary Sunshine',
-    'Context': 'Chicago Tribune',
-    'Review': 'Oh yes oh yes oh yes oh yes oh yes oh yes they both reached for the gun.  OR DID THEY. I don\t trust Billy Flynn as far as I can throw him,also how does Christine Baranski keep getting just THROWAWAY roles in shows instead of the stuff she deserves?'
-  },
-  {
-    'Reviewer': 'Brian Denton',
-    'Context': 'New York Sun',
-    'Review': 'Look at me I\'m the king of New York! I covered the newsboys strike and am the hero of every gay male musical theatre nerd who lived through the early 90\'s.'
-  },
-  {
-    'Reviewer': 'Andrea Sachs',
-    'Context': 'Runway',
-    'Review': 'I took a job I didn\'t especially want because of the experience, continued doing it even though it was clear my role was not going to allow me to move into the kind of work I wanted to actually do in my life, blamed everyone around me for this choice, pushed them away, and then burned all the bridges I might have POSSIBLY made in that industry by writing an "expose" about it.'
-  },
-  {
-    'Reviewer': 'Sara Melas',
-    'Context': 'New York Post Gossip Column',
-    'Review': 'I know Hitch is a terrible movie, like I get it but when he throws his inhaler it\s undeniably cute.'
-  },
-  {
-    'Reviewer': 'Annie Reed',
-    'Context': 'Baltimore Sun',
-    'Review': 'I fell in love with Tom Hanks and met him at the empire state building thanks to his son!'
-  }
-]};
