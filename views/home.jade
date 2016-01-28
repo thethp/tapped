@@ -5,9 +5,15 @@ html
   body
     include ./includes/nav.jade
     section.main-content._right
-      h1 Saturdays at 7:30 | MCL Chicago
-      a(href='http://www.mclchicago.com/store/p171/Tapped.html')
-        button._primary Get Tickets Now!
-      img.press_photo(src='/images/press/yoursecrets.jpg')
-      p this is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of words</p><p>this is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of words
-      p this is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of words</p><p>this is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of wordsthis is a series of words
+      h1 Mary is one of the NSA’s top agents. She’s smart, ambitious and in love for the first time. There’s just one problem: The object of her affection is Steve, the bumbling whistleblower she’s supposed to spy on.
+      iframe(width="560", height="315", src="https://www.youtube.com/embed/St8YdnjPglU", frameborder="0", allowfullscreen)
+      p After joining Steve’s quest to expose the NSA’s domestic spying program, Mary is forced to go on the run—testing her limits, facing her fears and squaring off against both the severe Swiss head of Wikileaks, Juliana, and the twisted Machiavellian head of the NSA, Patrick.
+      p Ultimately, Mary must answer the question: How much is she willing to give up for love and privacy rights?
+      p After winning the 2015 Premier Premieres Festival and fresh off a six-week, sold-out run at MCL Chicago, TAPPED is now seeking producers to take the show to the next level and reach an even bigger audience.
+      p TAPPED is an original musical comedy love-story farce, with book and lyrics by Jed Levine and music by Brad Kemp. With direction by Molly Todd, choreography by Holly Gombita, and music direction by Mary Mahoney.
+      .reviews
+        for el in reviews
+          .review
+            .review-content #{el.Review}
+            .review-author -#{el.Reviewer}
+            .review-context #{el.Context}

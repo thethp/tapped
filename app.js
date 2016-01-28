@@ -7,15 +7,15 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
-  res.render('home');
+  res.render('home', reviews);
   next();
 });
-app.get('/praise', function(req, res) {
-  res.render('praise', reviews);
+app.get('/listen', function(req, res) {
+  res.render('listen');
   next();
 });
 app.get('/contact', function(req, res) {
-  res.render('contact', reviews);
+  res.render('contact');
   next();
 });
 app.get('/who', function(req, res) {
@@ -24,8 +24,8 @@ app.get('/who', function(req, res) {
 });
 
 
-app.listen(80);
-console.log('Server running on port 80');
+app.listen(8090);
+console.log('Server running on port 8090');
 
 var creative_cast = { creative: [
   {
@@ -139,3 +139,25 @@ var creative_cast = { creative: [
       'Picture': 'HS.jpg'
     }
   ]};
+var reviews = { reviews: [
+  {
+    'Review': '"Clever, engaging and very funny."',
+    'Reviewer': 'Jim Jensen',
+    'Context': '2015 Premier Premieres Judge'
+  },
+  {
+    'Review': '"Funny as hell."',
+    'Reviewer': 'Tina Gluschenko',
+    'Context': '2015 Premier Premieres Judge'
+  },
+  {
+    'Review': 'Hilarious musical numbers.',
+    'Reviewer': 'Kim Campbell',
+    'Context': 'The Gapers Block'
+  },
+  {
+    'Review': 'This sow is so delightful. I don\'t have enough superlatives',
+    'Reviewer': 'Matthew Van Colton',
+    'Context': '2015 Premier Premieres Judge'
+  },
+]};

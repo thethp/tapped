@@ -17,7 +17,7 @@ html {
   min-height: 90%;
   margin: 120px 50px 0;
   text-align: center;
-  background: rgba(1,1,1,0.5);
+  background: rgba(1,1,1,0.8);
   font-family: edmondsans;
   color: $white;
   padding: 20px;
@@ -34,8 +34,13 @@ html {
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 32px;
     font-family: edmondsans;
+    text-align: center;
+  }
+
+  p {
+    text-align: left;
   }
 
   img.press_photo {
@@ -44,10 +49,53 @@ html {
   }
 }
 
+.reviews {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+
+.review {
+  color: #000;
+  background-color: #FFF;
+  margin: 1%;
+  display: inline-block;
+  padding: 10px;
+
+  &-content {
+    font-family: edmondsans;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  &-author,&-context {
+    text-align: right;
+  }
+
+  &-author {
+    font-size: 22px;
+    padding: 15px 0 5px;
+  }
+
+  &-context {
+    font-style: italic;
+  }
+}
+
 @media screen and (max-width: 1060px) {
   html {
     background: url(/images/tappedbgcenter.png) no-repeat 50% 50px fixed;
-    background-color: $blue;
   }
 
   .main-content,.main-content._right {
