@@ -5,16 +5,14 @@
 @import 'patterns/header';
 
 html {
-  background: url(/images/tappedbgleft.png) no-repeat 0 50px fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(/images/tappedbgleft.png) no-repeat 0 50px fixed;
   background-size: cover;
   background-color: $blue;
 }
 
 .main-content {
   min-height: 90%;
+  min-width: 620px;
   margin: 120px 50px 0;
   text-align: center;
   background: rgba(1,1,1,0.8);
@@ -36,7 +34,7 @@ html {
   h1 {
     font-size: 32px;
     font-family: edmondsans;
-    text-align: center;
+    text-align: left;
   }
 
   p {
@@ -49,53 +47,10 @@ html {
   }
 }
 
-.reviews {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-align-content: flex-end;
-  align-content: flex-end;
-}
-
-.review {
-  color: #000;
-  background-color: #FFF;
-  margin: 1%;
-  display: inline-block;
-  padding: 10px;
-
-  &-content {
-    font-family: edmondsans;
-    font-size: 20px;
-    text-align: left;
-  }
-
-  &-author,&-context {
-    text-align: right;
-  }
-
-  &-author {
-    font-size: 22px;
-    padding: 15px 0 5px;
-  }
-
-  &-context {
-    font-style: italic;
-  }
-}
-
 @media screen and (max-width: 1060px) {
   html {
     background: url(/images/tappedbgcenter.png) no-repeat 50% 50px fixed;
+    background-color: $blue;
   }
 
   .main-content,.main-content._right {

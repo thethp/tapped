@@ -156,7 +156,7 @@ var reviews = { reviews: [
     'Context': 'The Gapers Block'
   },
   {
-    'Review': 'This sow is so delightful. I don\'t have enough superlatives',
+    'Review': 'This show is so delightful. I don\'t have enough superlatives',
     'Reviewer': 'Matthew Van Colton',
     'Context': '2015 Premier Premieres Judge'
   },
