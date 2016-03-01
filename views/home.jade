@@ -4,17 +4,24 @@ html
     link(rel='stylesheet', href='/styles/core.css')
     link(rel='stylesheet', href='/styles/home.css')
   body
+    .background
     include ./includes/nav.jade
-    section.main-content._right
+    section.main-content._core
+      img(src='images/header-eagle.png').header-eagle
       h1 Mary is one of the NSA’s top agents. She’s smart, ambitious and in love for the first time. There’s just one problem: The object of her affection is Steve, the bumbling whistleblower she’s supposed to spy on.
-      iframe(width="560", height="315", src="https://www.youtube.com/embed/St8YdnjPglU", frameborder="0", allowfullscreen)
-      p After joining Steve’s quest to expose the NSA’s domestic spying program, Mary is forced to go on the run—testing her limits, facing her fears and squaring off against both the severe Swiss head of Wikileaks, Juliana, and the twisted Machiavellian head of the NSA, Patrick.
+      p After joining Steve’s quest to expose the NSA’s domestic spying program, Mary is forced to go on the run—-testing her limits, facing her fears and squaring off against both the severe Swiss head of Wikileaks and the dangerously hinged head of the NSA.
       p Ultimately, Mary must answer the question: How much is she willing to give up for love and privacy rights?
-      p After winning the 2015 Premier Premieres Festival and fresh off a six-week, sold-out run at MCL Chicago, TAPPED is now seeking producers to take the show to the next level and reach an even bigger audience.
-      p TAPPED is an original musical comedy love-story farce, with book and lyrics by Jed Levine and music by Brad Kemp. With direction by Molly Todd, choreography by Holly Gombita, and music direction by Mary Mahoney.
+      p After winning the 2015 Premier Premieres Festival and fresh off a six-week, sold-out run at MCL Chicago, TAPPED is now going bigger in 2016: with a four-week, 16-show run at Theater Wit, June 9 – July 3. It’s a bigger theater, with a bigger cast, bigger band and a bigger audience experience than before.
+      p TAPPED is an original musical comedy love-story farce, with book and lyrics by Jed Levine and music by Brad Kemp. TAPPED is directed by Molly Todd and choreographed by Holly Gombita.
+      iframe(width="560", height="315", src="https://www.youtube.com/embed/8Yfciri2YFQ", frameborder="0", allowfullscreen)
+      h2 Support the show
+      p You can help make TAPPED happen by donating to our IndieGogo campaign during the month of March. Every dollar you donate will be invested straight into the show to help make it even bigger, better and more entertaining.
+      a(href="https://www.indiegogo.com/project/cadd6a45#/") Visit our IndieGogo page
+      h2 What's Being Said About Tapped
       .reviews
         for el in reviews
           .review
             .review-content #{el.Review}
             .review-author -#{el.Reviewer}
             .review-context #{el.Context}
+      img(src='images/footer-eagle.png').footer-eagle

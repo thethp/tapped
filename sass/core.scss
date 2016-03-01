@@ -4,57 +4,89 @@
 @import 'patterns/reset';
 @import 'patterns/header';
 
-html {
-  background: url(/images/tappedbgleft.png) no-repeat 0 50px fixed;
+.background {
+  background: url(/images/tappedbg.png) no-repeat center;
   background-size: cover;
-  background-color: $blue;
+  background-color: $black;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
 }
 
 .main-content {
   min-height: 90%;
   min-width: 620px;
-  margin: 120px 50px 0;
+  margin: 410px 50px 0;
   text-align: center;
-  background: rgba(1,1,1,0.8);
+  background: rgba(1,24,44,0.7);
   font-family: edmondsans;
   color: $white;
   padding: 20px;
   transition: width .5s;
 
-  &._right {
-    width: 60%;
-    float: right;
+  .header-eagle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 100%;
+    opacity: 0.8;
+  }
+
+  .header-eagle,
+  .footer-eagle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 100%;
+  }
+
+  .footer-eagle {
+    bottom: auto;
+    top: 100%;
+  }
+
+  &._core {
+    width: 75%;
+    margin: 410px auto;
   }
 
   &._center {
     width: 90%;
-    margin: 120px auto 0;
+    margin: 410px auto;
   }
 
   h1 {
-    font-size: 32px;
-    font-family: edmondsans;
-    text-align: left;
+    font-size: 26px;
+    font-family: hero;
+    padding: 0 30px 10px;
+    text-align: justify;
+    line-height: 1.1;
+    margin-top: 15px;
+  }
+
+  h2 {
+      padding: 0 35px;
+      text-align: left;
   }
 
   p {
     text-align: left;
+    padding: 0 35px;
   }
 
   img.press_photo {
     width: 80%;
     margin: 30px 0;
   }
+
+  iframe {
+    padding: 16px 0 25px;
+  }
 }
 
 @media screen and (max-width: 1060px) {
-  html {
-    background: url(/images/tappedbgcenter.png) no-repeat 50% 50px fixed;
-    background-color: $blue;
-  }
 
-  .main-content,.main-content._right {
-    margin: 150px auto;
+  .main-content,.main-content._core {
+    margin: 350px auto;
     width: 80%;
     float: none;
   }

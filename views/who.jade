@@ -4,17 +4,20 @@ html.who
     link(rel='stylesheet', href='/styles/core.css')
     link(rel='stylesheet', href='/styles/who.css')
   body
+    .background
     include ./includes/nav.jade
     section.main-content._center
-      h1 Creative
+      img(src='images/header-eagle.png').header-eagle
+      h1 The Creative Team
       for el in creative
         .person(bio='#{el.Bio}',image='/images/bios/#{el.Picture}')
           .icon(style='background-image: url(/images/bios/#{el.Picture})')
           .name  #{el.Name} - #{el.Role}
-      h1 Cast
+      h1 The Cast
       for el in cast
         .person(bio='#{el.Bio}',image='/images/bios/#{el.Picture}')
           .icon(style='background-image: url(/images/bios/#{el.Picture})')
           .name  #{el.Name} - #{el.Role}
+      img(src='images/footer-eagle.png').footer-eagle
   script(src='/includes/jquery-2.1.4.min.js')
   script(src='/scripts/who.js')

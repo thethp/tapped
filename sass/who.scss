@@ -4,11 +4,6 @@
 @import 'patterns/reset';
 @import 'patterns/header';
 
-html {
-  background: url(/images/tappedbgcenter.png) no-repeat 50% 50px fixed;
-  background-color: $blue;
-}
-
 .person {
   display: inline-block;
   text-align: center;

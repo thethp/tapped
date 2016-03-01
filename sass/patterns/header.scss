@@ -2,8 +2,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0; left: 0; right: 0;
-  padding-right: 100px;
-  background-color: $dark-red;
+  background-color: $dark-blue;
   text-align: right;
   font-size: 20px;
   z-index: 1000;
@@ -19,6 +18,10 @@ nav {
   .logo {
     float: left;
     border: none;
+
+    img {
+      width: 180px;
+    }
   }
     
   .nav_choice {
@@ -38,4 +41,12 @@ nav {
       border-right: none;
     }
   }
+}
+
+@media screen and (max-width: 940px) {
+  nav {
+    text-align: center;
+
+      .logo { display: none;}
+    }
 }
