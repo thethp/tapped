@@ -10,12 +10,20 @@ app.get('/', function(req, res) {
   res.render('home', reviews);
   next();
 });
+app.get('/about', function(req, res) {
+  res.render('about');
+  next();
+});
 app.get('/listen', function(req, res) {
   res.render('listen');
   next();
 });
 app.get('/contact', function(req, res) {
   res.render('contact');
+  next();
+});
+app.get('/support', function(req, res) {
+  res.render('support');
   next();
 });
 app.get('/who', function(req, res) {

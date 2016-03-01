@@ -134,6 +134,8 @@ nav {
   .main-content h2 {
     padding: 0 35px;
     text-align: left; }
+    .main-content h2.center-text {
+      text-align: center; }
   .main-content p {
     text-align: left;
     padding: 0 35px; }
