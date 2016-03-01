@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'mission';
+  src: url("http://toddhpage.com/prettyfonts/Mission%20Gothic%20Bold.otf"); }
+
+@font-face {
+  font-family: 'edmondsans';
+  src: url("/fonts/Edmondsans-Regular.otf"); }
+
+@font-face {
+  font-family: 'edmondsans-bold';
+  src: url("/fonts/Edmondsans-Bold.otf"); }
+
+button {
+  padding: 5px 50px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer; }
+  button._primary {
+    background-color: #FF3C49;
+    color: #FFF; }
+  button:hover {
+    text-decoration: underline; }
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  font-family: mission; }
+
+body, html {
+  padding: 0 0 25px;
+  margin: 0; }
+
+a {
+  color: #FF3C49; }
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-right: 100px;
+  background-color: #9D0B14;
+  text-align: right;
+  font-size: 20px;
+  z-index: 1000; }
+  nav a {
+    display: inline-block;
+    padding: 20px 20px;
+    border-right: 1px solid #FFF;
+    text-decoration: none;
+    color: #FFF; }
+  nav .logo {
+    float: left;
+    border: none; }
+  nav .nav_choice {
+    padding-bottom: 25px; }
+    nav .nav_choice:hover {
+      background-color: #FFF;
+      color: #FF3C49;
+      text-decoration: underline; }
+    nav .nav_choice:first-of-type {
+      border-left: 1px solid #FFF; }
+    nav .nav_choice:last-of-type {
+      border-right: none; }
+
+html {
+  background: url(/images/tappedbgcenter.png) no-repeat 50% 50px fixed;
+  background-color: #01345E; }
+
+.main-content {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3; }
+
+.review {
+  color: #000;
+  background-color: #FFF;
+  margin: 1%;
+  display: inline-block;
+  padding: 10px; }
+  .review-content {
+    font-family: edmondsans;
+    font-size: 20px;
+    text-align: left; }
+  .review-author, .review-context {
+    text-align: right; }
+  .review-author {
+    font-size: 22px;
+    padding: 15px 0 5px; }
+  .review-context {
+    font-style: italic; }

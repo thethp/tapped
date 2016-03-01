@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'mission';
+  src: url("http://toddhpage.com/prettyfonts/Mission%20Gothic%20Bold.otf"); }
+
+@font-face {
+  font-family: 'edmondsans';
+  src: url("/fonts/Edmondsans-Regular.otf"); }
+
+@font-face {
+  font-family: 'edmondsans-bold';
+  src: url("/fonts/Edmondsans-Bold.otf"); }
+
+@font-face {
+  font-family: 'hero';
+  src: url("/fonts/Hero.otf"); }
+
+@font-face {
+  font-family: 'hero-light';
+  src: url("/fonts/Hero Light.otf"); }
+
+button {
+  padding: 5px 50px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer; }
+  button._primary {
+    background-color: #FF3C49;
+    color: #FFF; }
+  button:hover {
+    text-decoration: underline; }
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  font-family: mission; }
+
+body, html {
+  padding: 0 0 25px;
+  margin: 0; }
+
+a {
+  color: #FF3C49; }
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #01345E;
+  text-align: right;
+  font-size: 20px;
+  z-index: 1000; }
+  nav a {
+    display: inline-block;
+    padding: 20px 20px;
+    border-right: 1px solid #FFF;
+    text-decoration: none;
+    color: #FFF; }
+  nav .logo {
+    float: left;
+    border: none; }
+    nav .logo img {
+      width: 180px; }
+  nav .nav_choice {
+    padding-bottom: 25px; }
+    nav .nav_choice:hover {
+      background-color: #FFF;
+      color: #FF3C49;
+      text-decoration: underline; }
+    nav .nav_choice:first-of-type {
+      border-left: 1px solid #FFF; }
+    nav .nav_choice:last-of-type {
+      border-right: none; }
+
+@media screen and (max-width: 940px) {
+  nav {
+    text-align: center; }
+    nav .logo {
+      display: none; } }
+
+.person {
+  display: inline-block;
+  text-align: center;
+  font-family: mission;
+  padding: 20px 25px; }
+  .person .icon {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 100%;
+    border: 10px solid #FFF;
+    margin: 0 auto 10px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: border .5s, -webkit-filter .5s;
+    transition: border .5s, -webkit-filter .5s;
+    transition: border .5s, filter .5s;
+    transition: border .5s, filter .5s, -webkit-filter .5s; }
+    .person .icon:hover {
+      border: 10px solid #FF3C49;
+      -webkit-filter: grayscale(0%);
+              filter: grayscale(0%); }
+  .person .name {
+    font-size: 20px; }
+
+.curtain {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(1, 1, 1, 0.7);
+  z-index: 1000; }
+
+.modal {
+  width: 80%;
+  max-width: 600px;
+  min-height: 170px;
+  margin: 25% auto;
+  padding: 25px;
+  background-color: #FFF; }
+  .modal img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-right: 20px; }
+  .modal .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #666;
+    cursor: pointer; }
