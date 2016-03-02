@@ -91,12 +91,6 @@ var creative_cast = { creative: [
       'Role': 'Juliana',
       'Bio': 'Jenna was once part of an FBI sting operation, so she hopes she\'s still on the NSA\'s good side. Jenna loves the American government and all of its logical, pro-humanity choices; she trusts that by now they\'ve forgiven her rebellious years as an ex-pat. Due to its cheese, America is a superior nation to Switzerland.',
       'Picture': 'JS.jpg'
-    },
-    {
-      'Name': 'Sarah Barnhardt',
-      'Role': 'Ensemble',
-      'Bio': 'Sarah works for the NSA in the Department of Snapchats. She collects your disappeared Snapchats and saves them to your personal folder, organizing into subfolders based on silliness and inappropriateness. Check out her solo sketch and The Comedy Dance Collective to see if any of your "snaps" appear in her shows. <a href="sarahbarnhardt.com">"www.sarahbarnhardt.com</a>',
-      'Picture': 'SB.jpg'
     },  
     {
       'Name': 'Colleen Burgess',
@@ -109,12 +103,6 @@ var creative_cast = { creative: [
       'Role': 'Ensemble',
       'Bio': 'Phil <i>could</i> be a dangerous member of a domestic terrorism sleeper cell. Or, he could be a special agent operating undercover for the FBI. Or, he could just be a regular citizen studying improv at Second City Training Center. He could tell you the truth – but who needs that when you can just speculate it!',
       'Picture': 'PD.jpg'
-    },
-    {
-      'Name': 'Lou Leonardo',
-      'Role': 'Ensemble',
-      'Bio': 'may or may not be an undercover FBI agent set to infiltrate this show and assume the identities of its various oddballs. Before going undercover, Lou was a Chicago actor working on stage and screen with a BFA in acting from Syracuse University.',
-      'Picture': 'default.png'
     },
     {
       'Name': 'Mikey Mulhearn',
@@ -133,12 +121,6 @@ var creative_cast = { creative: [
       'Role': 'Ensemble',
       'Bio': 'has a moustache and all the authority that comes with it, and is proud to be using it as part of this grand organization. You\'re welcome. Todd frequently stops terrorists at MINT (X-Mint), and with vigorous high fives on ComedySportz house team CHAOS',
       'Picture': 'TP.jpg'
-    },
-    {
-      'Name': 'Kristen Schmitz',
-      'Role': 'Ensemble',
-      'Bio': 'Kristen recently fled... err... moved to Chicago from the Bay Area. If you see her doing weird things with her hands, don\'t worry, it\'s not a secret terrorist signal—in addition to acting and improvising she is studying to become a sign language interpreter. You can see her perform every other Friday night at the Comedy Clubhouse with her improv team, Win Again Finnegan.',
-      'Picture': 'default.png'
     },
     {
       'Name': 'Heather Scholl',
