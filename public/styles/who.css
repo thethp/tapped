@@ -67,7 +67,7 @@ nav {
       width: 180px; }
   nav .nav_choice {
     padding-bottom: 25px; }
-    nav .nav_choice:hover {
+    nav .nav_choice:hover, nav .nav_choice.active {
       background-color: #FFF;
       color: #FF3C49;
       text-decoration: underline; }

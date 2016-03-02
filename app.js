@@ -11,19 +11,19 @@ app.get('/', function(req, res) {
   next();
 });
 app.get('/about', function(req, res) {
-  res.render('about');
+  res.render('about', {activePage: 'about'});
   next();
 });
 app.get('/listen', function(req, res) {
-  res.render('listen');
+  res.render('listen', {activePage: 'listen'});
   next();
 });
 app.get('/contact', function(req, res) {
-  res.render('contact');
+  res.render('contact', {activePage: 'contact'});
   next();
 });
 app.get('/support', function(req, res) {
-  res.render('support');
+  res.render('support', {activePage: 'support'});
   next();
 });
 app.get('/who', function(req, res) {
@@ -146,7 +146,7 @@ var creative_cast = { creative: [
       'Bio': 'Heather likes to travel and pretend she\'s a spy. If the NSA is monitoring her, they’ll find a trail of strange organization acronyms such as MINt, SCTC, and iO in her history. Heather is also an Anarchist (meaning she can improvise a rock musical).',
       'Picture': 'HS.jpg'
     }
-  ]};
+  ], activePage: 'who'};
 var reviews = { reviews: [
   {
     'Review': '"Clever, engaging and very funny."',
@@ -159,13 +159,13 @@ var reviews = { reviews: [
     'Context': '2015 Premier Premieres Judge'
   },
   {
-    'Review': 'Hilarious musical numbers.',
+    'Review': '"Hilarious musical numbers."',
     'Reviewer': 'Kim Campbell',
     'Context': 'The Gapers Block'
   },
   {
-    'Review': 'This show is so delightful. I don\'t have enough superlatives',
+    'Review': '"This show is so delightful. I don\'t have enough superlatives"',
     'Reviewer': 'Matthew Van Colton',
     'Context': '2015 Premier Premieres Judge'
   },
-]};
+], activePage: 'home'};

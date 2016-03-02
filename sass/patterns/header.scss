@@ -27,7 +27,7 @@ nav {
   .nav_choice {
     padding-bottom: 25px;
 
-    &:hover {      
+    &:hover,&.active {      
       background-color: $white;
       color: $pink;
       text-decoration: underline;

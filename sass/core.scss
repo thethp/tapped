@@ -14,7 +14,8 @@
 
 .main-content {
   min-height: 90%;
-  min-width: 620px;
+  min-width: 640px;
+  max-width: 995px;
   margin: 410px 50px 0;
   text-align: center;
   background: rgba(1,24,44,0.7);
@@ -22,6 +23,7 @@
   color: $white;
   padding: 20px;
   transition: width .5s;
+  padding-top: 80px;
 
   .header-eagle {
     position: absolute;
@@ -29,6 +31,19 @@
     width: 100%;
     bottom: 100%;
     opacity: 0.8;
+  }
+
+  .dates {
+    background: $white;
+    color: $pink;
+    padding: 15px;
+    text-align: center;
+    text-decoration: underline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 20px;
   }
 
   .header-eagle,
@@ -60,11 +75,11 @@
     padding: 0 30px 10px;
     text-align: justify;
     line-height: 1.1;
-    margin-top: 15px;
+    margin: 15px 0;
   }
 
   h2 {
-    padding: 0 35px;
+    padding: 30px 25px 0;
     text-align: left;
 
     &.center-text {
@@ -75,6 +90,11 @@
   p {
     text-align: left;
     padding: 0 35px;
+  }
+
+  .text-left {
+  padding: 0 35px;
+    text-align: left;
   }
 
   img.press_photo {
