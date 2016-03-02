@@ -78,7 +78,7 @@ var creative_cast = { creative: [
       'Name': 'Brittny Congleton',
       'Role': 'Lisa',
       'Bio': 'Brittny always dresses appropriately and professionally for her work at the NSA, which she treats with the utmost respect. She in no way pretends to be lots other people in her many one-woman cabarets and would never consider fraternizing inappropriately with other women like the harlots of HEY LADIES and Vaudezilla do. For further proof of her patriotism check out <a href="brittnycongleton.com">www.brittnycongleton.com</a>',
-      'Picture': 'default.png'
+      'Picture': 'BC.jpg'
     },
     {
       'Name': 'David Dritsas',
@@ -90,7 +90,7 @@ var creative_cast = { creative: [
       'Name': 'Jenna Steege',
       'Role': 'Juliana',
       'Bio': 'Jenna was once part of an FBI sting operation, so she hopes she\'s still on the NSA\'s good side. Jenna loves the American government and all of its logical, pro-humanity choices; she trusts that by now they\'ve forgiven her rebellious years as an ex-pat. Due to its cheese, America is a superior nation to Switzerland.',
-      'Picture': 'default.png'
+      'Picture': 'JS.jpg'
     },
     {
       'Name': 'Sarah Barnhardt',
@@ -120,13 +120,13 @@ var creative_cast = { creative: [
       'Name': 'Mikey Mulhearn',
       'Role': 'Ensemble',
       'Bio': 'Mikey is proud to represent the vast diversity of NSA employees as their white gay intern. He promises to promote their good name throughout the land while both working onstage and off. To read more about the NSA’s equal opportunity employment policies please visit <a href="michaelmulhearn.com">michaelmulhearn.com</a>.',
-      'Picture': 'default.png'
+      'Picture': 'MM.jpg'
     },
     {
       'Name': 'Beau Nolen',
       'Role': 'Ensemble',
       'Bio': 'Beau is probably an American, and might be a government secret weapon. He is currently working undercover as a former reality TV star and Chicago bon vivant, and has recently infiltrated a clandestine organization called X-MINT. Some say he is a siren, his serenade as mesmerizing and deadly as his kiss. Beware.',
-      'Picture': 'default.png'
+      'Picture': 'BN.jpg'
     },    
     {
       'Name': 'Todd Page',
