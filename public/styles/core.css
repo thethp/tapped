@@ -156,7 +156,10 @@ nav {
     text-align: left; }
   .main-content img.press_photo {
     width: 80%;
-    margin: 30px 0; }
+    display: block;
+    margin: 40px auto; }
+    .main-content img.press_photo.vert {
+      width: 40%; }
   .main-content iframe {
     padding: 16px 0 25px; }
 

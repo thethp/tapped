@@ -8,23 +8,18 @@ app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
   res.render('home', reviews);
-  next();
 });
 app.get('/about', function(req, res) {
   res.render('about', {activePage: 'about'});
-  next();
 });
 app.get('/listen', function(req, res) {
   res.render('listen', {activePage: 'listen'});
-  next();
 });
 app.get('/contact', function(req, res) {
   res.render('contact', {activePage: 'contact'});
-  next();
 });
 app.get('/support', function(req, res) {
   res.render('support', {activePage: 'support'});
-  next();
 });
 app.get('/who', function(req, res) {
   res.render('who', creative_cast);
@@ -91,7 +86,7 @@ var creative_cast = { creative: [
       'Role': 'Juliana',
       'Bio': 'Jenna was once part of an FBI sting operation, so she hopes she\'s still on the NSA\'s good side. Jenna loves the American government and all of its logical, pro-humanity choices; she trusts that by now they\'ve forgiven her rebellious years as an ex-pat. Due to its cheese, America is a superior nation to Switzerland.',
       'Picture': 'JS.jpg'
-    },  
+    },
     {
       'Name': 'Colleen Burgess',
       'Role': 'Ensemble',
@@ -108,7 +103,7 @@ var creative_cast = { creative: [
       'Name': 'Mikey Mulhearn',
       'Role': 'Ensemble',
       'Bio': 'Mikey is proud to represent the vast diversity of NSA employees as their white gay intern. He promises to promote their good name throughout the land while both working onstage and off. To read more about the NSA’s equal opportunity employment policies please visit <a href="michaelmulhearn.com">michaelmulhearn.com</a>.',
-      'Picture': 'MM.jpg'
+      'Picture': 'default.png'
     },
     {
       'Name': 'Beau Nolen',
@@ -128,7 +123,27 @@ var creative_cast = { creative: [
       'Bio': 'Heather likes to travel and pretend she\'s a spy. If the NSA is monitoring her, they’ll find a trail of strange organization acronyms such as MINt, SCTC, and iO in her history. Heather is also an Anarchist (meaning she can improvise a rock musical).',
       'Picture': 'HS.jpg'
     }
-  ], activePage: 'who'};
+  ], activePage: 'who',
+ emeritus: [
+    {
+      'Name': 'Sarah Barnhardt',
+      'Role': 'Ensemble',
+      'Bio': 'Sarah works for the NSA in the Department of Snapchats. She collects your disappeared Snapchats and saves them to your personal folder, organizing into subfolders based on silliness and inappropriateness. Check out her solo sketch and The Comedy Dance Collective to see if any of your "snaps" appear in her shows. <a href="sarahbarnhardt.com">"www.sarahbarnhardt.com</a>',
+      'Picture': 'SB.jpg'
+    },  
+    {
+      'Name': 'Lou Leonardo',
+      'Role': 'Ensemble',
+      'Bio': 'may or may not be an undercover FBI agent set to infiltrate this show and assume the identities of its various oddballs. Before going undercover, Lou was a Chicago actor working on stage and screen with a BFA in acting from Syracuse University.',
+      'Picture': 'LL.jpg'
+    },
+    {
+      'Name': 'Kristen Schmitz',
+      'Role': 'Ensemble',
+      'Bio': 'Kristen recently fled... err... moved to Chicago from the Bay Area. If you see her doing weird things with her hands, don\'t worry, it\'s not a secret terrorist signal—in addition to acting and improvising she is studying to become a sign language interpreter. You can see her perform every other Friday night at the Comedy Clubhouse with her improv team, Win Again Finnegan.',
+      'Picture': 'default.png'
+    }
+]};
 var reviews = { reviews: [
   {
     'Review': '"Clever, engaging and very funny."',
