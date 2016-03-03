@@ -103,7 +103,7 @@ var creative_cast = { creative: [
       'Name': 'Mikey Mulhearn',
       'Role': 'Ensemble',
       'Bio': 'Mikey is proud to represent the vast diversity of NSA employees as their white gay intern. He promises to promote their good name throughout the land while both working onstage and off. To read more about the NSA’s equal opportunity employment policies please visit <a href="michaelmulhearn.com">michaelmulhearn.com</a>.',
-      'Picture': 'default.png'
+      'Picture': 'MM.jpg'
     },
     {
       'Name': 'Beau Nolen',
